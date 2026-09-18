@@ -1,4 +1,4 @@
-While True: 
+while True: 
     print("""=== Command-Line Toolbox ===
 
     1. Unit Converter
@@ -22,7 +22,7 @@ While True:
         #launch Number Guessing Game
     elif option == "4":
         print("You choose to exit the CLI Toolbox")
+        break
         #exit cli toolbox 
     else: 
-        print("You hve selected an invalid option.\n Kindly choose from 1 - 3 baseed on your preference")
-        
+        print("You have selected an invalid option.\n Kindly choose from 1 - 4 based on your preference")
