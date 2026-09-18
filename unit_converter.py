@@ -1,7 +1,7 @@
-def to_fah(cel):
+def celsius_to_fahrenheit(cel):
     return (cel * 1.8) + 32
 
-def to_cel(fah):
+def fahrenheit_to_celsius(fah):
     return (fah - 32) * (5/9)
 
 def unit_converter():
@@ -16,11 +16,11 @@ def unit_converter():
 
     if opt == "1":
         cel = float(input("Enter temperature: "))
-        result = to_fah(cel)
+        result = celsius_to_fahrenheit(cel)
         print("The result is: " + str(result) + " Fahrenheit")
     elif opt == "2":
         fah = float(input("Enter temperature: "))
-        result = to_cel(fah)
+        result = fahrenheit_to_celsius(fah)
         print("The result is: " + str(round(result, 4)) + " Celsius")
     else:
         print("You have selected an invalid option...")
