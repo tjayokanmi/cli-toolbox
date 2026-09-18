@@ -14,10 +14,10 @@ def ToCel(fah):
     return (fah - 32) * (5/9)
 
 if opt == "1":
-    cel = int(input("Enter temperature: "))
+    cel = float(input("Enter temperature: "))
     result = ToFah(cel)
     print("The result is: " + str(result) + " Fahreheit")
 elif opt == "2":
-    fah = int(input("Enter temperature: "))
+    fah = float(input("Enter temperature: "))
     result = ToCel(fah)
-    print("The result is: " + str(round(result)) + " Celsius")
+    print("The result is: " + str(round(result, 4)) + " Celsius")
