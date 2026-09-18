@@ -17,8 +17,10 @@ def unit_converter():
     if opt == "1":
         cel = float(input("Enter temperature: "))
         result = to_fah(cel)
-        print("The result is: " + str(result) + " Fahreheit")
+        print("The result is: " + str(result) + " Fahrenheit")
     elif opt == "2":
         fah = float(input("Enter temperature: "))
         result = to_cel(fah)
         print("The result is: " + str(round(result, 4)) + " Celsius")
+    else:
+        print("You have selected an invalid option...")
