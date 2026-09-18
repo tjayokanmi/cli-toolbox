@@ -1,5 +1,3 @@
-from unit_converter import unit_converter
-
 while True: 
     print("""=== Command-Line Toolbox ===
 
