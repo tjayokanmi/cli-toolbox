@@ -47,6 +47,7 @@ def unit_converter():
         print()
     elif opt == "X": 
         print("You have decided to exit the unit converter")
+        #exit the loop.
         
     else:
         print("You have selected an invalid option...")
