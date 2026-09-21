@@ -20,7 +20,6 @@ def guessing_game():
         elif guess < secret_number: 
             print("Your guess is low, the number is bigger")
         else: 
-        # guess == secret_number:
             print(f"You are right! The number is {secret_number}")
             print(f"You got it in {attempt} guesses")
             print()

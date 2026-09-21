@@ -8,7 +8,7 @@ while True:
     1. Unit Converter
     2. Calculator
     3. Number Guessing Game
-    4. Exit
+    X. Exit
     """)
 
     option = input("Choose an option: ")
@@ -26,7 +26,7 @@ while True:
         print("You choose a Number Guessing Game")
         guessing_game()
         #launch Number Guessing Game
-    elif option == "4":
+    elif option == "X":
         print("You chose to exit the CLI Toolbox")
         break
         #exit cli toolbox 
