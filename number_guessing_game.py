@@ -8,7 +8,7 @@ Goodluck!!!
      """ )
 
 secret_number = random.randint(1, 20)
-count = 0
+count = 1
 
 for num in range(6): 
     print("Guess my secret number.")
@@ -20,7 +20,7 @@ for num in range(6):
         print("Your guess is low, the number is bigger")
     else: 
         break
-    count +1
+    count += 1
 
 if guess == secret_number:
     print(f"You are right! The number is {secret_number}\n You got it in {count} counts")
