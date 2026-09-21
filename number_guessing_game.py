@@ -4,7 +4,7 @@ Welcome to Number Guessing Game!
 I have a number in mind, can you guess it? 
 You only have 6 attempts. 
 HINT: The number is between 1 - 20. 
-Goodluck!!!
+Good luck!
      """ )
 
 secret_number = random.randint(1, 20)
@@ -21,6 +21,10 @@ for num in range(1,7):
     else: 
        # guess == secret_number:
         print(f"You are right! The number is {secret_number}")
-        print(f"You got it in {num} counts")
+        print(f"You got it in {num} guesses")
+        print("Let's play again!")
+        print()
 else: 
     print(f"You run out of guesses! The number is {secret_number}")  
+    print("Let's play again!")
+    print()
