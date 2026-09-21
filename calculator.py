@@ -4,8 +4,8 @@ def calculator():
         1. Addition
         2. Subtraction
         3. Multiplication
-        4. Subtraction
-        # X. Exit
+        4. Division
+        X. Exit
         """)
 
     option = input("Choose an option: ")
@@ -15,13 +15,13 @@ def calculator():
 
 
     if option == "1":
-        addition(first_number ,second_number)
+        print(addition(first_number ,second_number))
     elif option == "2":
-        subtraction(first_number ,second_number)
+        print(subtraction(first_number ,second_number))
     elif option == "3":
-        multiplication(first_number ,second_number)
+        print(multiplication(first_number ,second_number))
     elif option == "4":
-        division(first_number ,second_number)
+        print(division(first_number ,second_number))
     # elif option == "X":
     #     break 
     else:
@@ -31,8 +31,10 @@ def calculator():
 def addition(x,y):
     return x + y
 def subtraction(x,y):
-    return x + y
+    return x - y
 def multiplication(x,y):
     return x * y
 def division(x,y):
     return x / y 
+
+calculator()
