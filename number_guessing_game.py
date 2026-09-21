@@ -8,9 +8,9 @@ Goodluck!!!
      """ )
 
 secret_number = random.randint(1, 20)
-count = 1
+#count = 1
 
-for num in range(6): 
+for num in range(1,7): 
     print("Guess my secret number.")
     guess = int(input())
     
@@ -19,10 +19,8 @@ for num in range(6):
     elif guess < secret_number: 
         print("Your guess is low, the number is bigger")
     else: 
-        break
-    count += 1
-
-if guess == secret_number:
-    print(f"You are right! The number is {secret_number}\n You got it in {count} counts")
+       # guess == secret_number:
+        print(f"You are right! The number is {secret_number}")
+        print(f"You got it in {num} counts")
 else: 
     print(f"You run out of guesses! The number is {secret_number}")  
