@@ -10,9 +10,8 @@ def guessing_game():
         """ )
 
     secret_number = random.randint(1, 20)
-    #count = 1
 
-    for num in range(1,7): 
+    for attempt in range(1,7): 
         print("Guess my secret number.")
         guess = int(input())
         
@@ -23,7 +22,7 @@ def guessing_game():
         else: 
         # guess == secret_number:
             print(f"You are right! The number is {secret_number}")
-            print(f"You got it in {num} guesses")
+            print(f"You got it in {attempt} guesses")
             print()
             break
     else: 
