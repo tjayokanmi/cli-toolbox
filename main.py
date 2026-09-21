@@ -1,4 +1,5 @@
 from unit_converter import unit_converter
+from guessing_game import guessing_game
 
 while True: 
     
@@ -23,6 +24,7 @@ while True:
 
     elif option == "3":
         print("You choose a Number Guessing Game")
+        guessing_game()
         #launch Number Guessing Game
     elif option == "4":
         print("You chose to exit the CLI Toolbox")
