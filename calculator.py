@@ -28,7 +28,8 @@ def calculator():
             print(multiplication(x,y))
         elif option == "4":
             try: 
-                print(division(x,y))
+                result = division(x,y)
+                print(result)
             except ZeroDivisionError:
                 print("Invalid Division Operation")
 
