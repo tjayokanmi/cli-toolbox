@@ -1,5 +1,6 @@
 from unit_converter import unit_converter
 from guessing_game import guessing_game
+from calculator import calculator
 
 while True: 
     
@@ -20,6 +21,7 @@ while True:
 
     elif option == "2":
         print("You choose a Calculator")
+        calculator()
         #launch Calculator
 
     elif option == "3":
