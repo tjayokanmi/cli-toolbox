@@ -33,4 +33,4 @@ while True:
         break
         #exit cli toolbox 
     else: 
-        print("You have selected an invalid option.\n Kindly choose from 1 - 4 based on your preference")
+        print("You have selected an invalid option.\n Kindly choose from 1 - 3 based on your preference or X to exit")

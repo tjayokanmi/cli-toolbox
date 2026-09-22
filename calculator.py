@@ -10,29 +10,37 @@ def calculator():
 
     option = input("Choose an option: ")
 
-    first_number = float(input("Enter the first number: "))
-    second_number = float(input("Enter the first number: "))
-
-
-    if option == "1":
-        print(addition(first_number ,second_number))
-    elif option == "2":
-        print(subtraction(first_number ,second_number))
-    elif option == "3":
-        print(multiplication(first_number ,second_number))
-    elif option == "4":
-        print(division(first_number ,second_number))
-    # elif option == "X":
-    #     break 
+     
+    if option.upper() == "X":
+        return
     else:
-        print("You have enter an invalid option")
+        try: 
+             x = float(input("Enter the first number: "))
+             y = float(input("Enter the second number: "))
+        except ValueError:
+            return "Kindly enter a number"
 
+        if option == "1":
+            print(addition(x,y))
+        elif option == "2":
+            print(subtraction(x,y))
+        elif option == "3":
+            print(multiplication(x,y))
+        elif option == "4":
+            print(division(x,y))
+        else:
+            print("You have entered an invalid option") 
 
-def addition(x,y):
+def addition(x, y):
     return x + y
+    
 def subtraction(x,y):
     return x - y
+
 def multiplication(x,y):
     return x * y
+
 def division(x,y):
     return x / y 
+
+calculator()
