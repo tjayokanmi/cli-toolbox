@@ -13,7 +13,7 @@ def calculator():
      
     if option.upper() == "X":
         return
-    else:
+    elif option in ("1", "2", "3", "4"):
         try: 
              x = float(input("Enter the first number: "))
              y = float(input("Enter the second number: "))
@@ -27,9 +27,14 @@ def calculator():
         elif option == "3":
             print(multiplication(x,y))
         elif option == "4":
-            print(division(x,y))
-        else:
-            print("You have entered an invalid option") 
+            try: 
+                print(division(x,y))
+            except ZeroDivisionError:
+                print("Invalid Division Operation")
+
+        
+    else:
+        print("You have entered an invalid option") 
 
 def addition(x, y):
     return x + y
@@ -42,5 +47,6 @@ def multiplication(x,y):
 
 def division(x,y):
     return x / y 
+   
 
 calculator()
