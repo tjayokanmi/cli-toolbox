@@ -13,7 +13,12 @@ def guessing_game():
 
     for attempt in range(1,7): 
         print("Guess my secret number.")
-        guess = int(input())
+        
+        try:
+            guess = int(input())
+        except ValueError: 
+            print("Kindly enter a number")
+            return
         
         if guess > secret_number:
             print("Your guess is high, think of a lower number")

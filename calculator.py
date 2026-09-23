@@ -18,7 +18,8 @@ def calculator():
              x = float(input("Enter the first number: "))
              y = float(input("Enter the second number: "))
         except ValueError:
-            return "Kindly enter a number"
+            print("Kindly enter a number")
+            return 
 
         if option == "1":
             print(addition(x,y))
@@ -50,4 +51,3 @@ def division(x,y):
     return x / y 
    
 
-calculator()
