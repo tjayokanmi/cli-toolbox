@@ -17,20 +17,16 @@ while True:
     if option == "1":
         print("You choose a Unit Converter")
         unit_converter()
-        #lauch Unit Converter
 
     elif option == "2":
         print("You choose a Calculator")
         calculator()
-        #launch Calculator
 
     elif option == "3":
         print("You choose a Number Guessing Game")
         guessing_game()
-        #launch Number Guessing Game
-    elif option == "X":
+    elif option.upper() == "X":
         print("You chose to exit the CLI Toolbox")
         break
-        #exit cli toolbox 
     else: 
         print("You have selected an invalid option.\n Kindly choose from 1 - 3 based on your preference or X to exit")
