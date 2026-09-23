@@ -45,7 +45,7 @@ def unit_converter():
         result = miles_to_kilometres(miles)
         print("The result is: " + str(round(result, 2)) + " Kilometers")
         print()
-    elif opt == "X": 
+    elif opt.upper() == "X": 
         print("You have decided to exit the unit converter")
         
     else:
