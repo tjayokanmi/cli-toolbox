@@ -1,3 +1,5 @@
+from unit_converter import get_number
+
 def calculator():
     print("""
         What do you want to do? 
@@ -16,19 +18,27 @@ def calculator():
     elif option in ("1", "2", "3", "4"):
         while True:
             try: 
-                x = float(input("Enter the first number: "))
-                y = float(input("Enter the second number: "))
+                x = get_number("Enter the first number: ")
+                y = get_number("Enter the second number: ")
                 break
             except ValueError:
                 print("Kindly enter a number")
                 
         if option == "1":
+            x = get_number("Enter the first number: ")
+            y = get_number("Enter the second number: ")
             print(addition(x,y))
         elif option == "2":
+            x = get_number("Enter the first number: ")
+            y = get_number("Enter the second number: ")
             print(subtraction(x,y))
         elif option == "3":
+            x = get_number("Enter the first number: ")
+            y = get_number("Enter the second number: ")
             print(multiplication(x,y))
         elif option == "4":
+            x = get_number("Enter the first number: ")
+            y = get_number("Enter the second number: ")
             while True:
                 try: 
                     y = float(input("Enter the second number: "))
