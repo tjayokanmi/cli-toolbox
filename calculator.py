@@ -14,13 +14,14 @@ def calculator():
     if option.upper() == "X":
         return
     elif option in ("1", "2", "3", "4"):
-        try: 
-             x = float(input("Enter the first number: "))
-             y = float(input("Enter the second number: "))
-        except ValueError:
-            print("Kindly enter a number")
-            return 
-
+        while True:
+            try: 
+                x = float(input("Enter the first number: "))
+                y = float(input("Enter the second number: "))
+                break
+            except ValueError:
+                print("Kindly enter a number")
+                
         if option == "1":
             print(addition(x,y))
         elif option == "2":
@@ -28,11 +29,14 @@ def calculator():
         elif option == "3":
             print(multiplication(x,y))
         elif option == "4":
-            try: 
-                result = division(x,y)
-                print(result)
-            except ZeroDivisionError:
-                print("Invalid Division Operation")
+            while True:
+                try: 
+                    result = division(x,y)
+                    print(result)
+                    break
+                except ZeroDivisionError:
+                    print("Invalid Division Operation \n The second number cannot be zero")
+                    y = float(input("Enter the second number: "))
 
         
     else:
