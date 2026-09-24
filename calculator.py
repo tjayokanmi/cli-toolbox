@@ -31,12 +31,14 @@ def calculator():
         elif option == "4":
             while True:
                 try: 
+                    y = float(input("Enter the second number: "))
                     result = division(x,y)
                     print(result)
                     break
                 except ZeroDivisionError:
                     print("Invalid Division Operation \n The second number cannot be zero")
-                    y = float(input("Enter the second number: "))
+                except ValueError:
+                    print("Kindly enter a number")
 
         
     else:
@@ -53,5 +55,6 @@ def multiplication(x,y):
 
 def division(x,y):
     return x / y 
+    
    
 
