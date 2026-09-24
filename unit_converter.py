@@ -10,11 +10,11 @@ def kilometers_to_miles(km):
 def miles_to_kilometres(miles):
     return miles * 1.60934
 
-def get_number():
+def get_number(prompt):
     
     while True: 
         try:
-            number = float(input("Enter temperature: "))
+            number = float(input(prompt))
             break
         except ValueError:
             print("Enter a valid number")
@@ -34,14 +34,14 @@ def unit_converter():
     opt = input("Choose conversion: ")
 
     if opt == "1":
-        cel = get_number("Enter temperature: ")
-        result = celsius_to_fahrenheit(cel)
+        celsius = get_number("Enter Temperature: ")
+        result = celsius_to_fahrenheit(celsius)
         print("The result is: " + str(result) + " Fahrenheit")
         print()
         
     elif opt == "2":
-        fah = get_number("Enter temperature: ")
-        result = fahrenheit_to_celsius(fah)
+        fahrenheit = get_number("Enter Temperature: ")
+        result = fahrenheit_to_celsius(fahrenheit)
         print("The result is: " + str(round(result, 2)) + " Celsius")
         print() 
     elif opt == "3":    
@@ -52,10 +52,10 @@ def unit_converter():
         print()
  
     elif opt == "4":
-           miles = get_number("Enter Miles: ")
-           result = miles_to_kilometres(miles)
-           print("The result is: " + str(round(result, 2)) + " Kilometers")
-           print()
+        miles = get_number("Enter Miles: ")
+        result = miles_to_kilometres(miles)
+        print("The result is: " + str(round(result, 2)) + " Kilometers")
+        print()
             
     elif opt.upper() == "X": 
         print("You have decided to exit the unit converter")
