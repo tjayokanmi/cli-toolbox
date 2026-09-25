@@ -1,13 +1,13 @@
 from utils import get_number
 
-def celsius_to_fahrenheit(cel):
-    return (cel * 1.8) + 32
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 1.8) + 32
 
-def fahrenheit_to_celsius(fah):
-    return (fah - 32) * (5/9)
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * (5/9)
 
-def kilometers_to_miles(km):
-    return km * 0.621371
+def kilometers_to_miles(kilometers):
+    return kilometers * 0.621371
 
 def miles_to_kilometres(miles):
     return miles * 1.60934
