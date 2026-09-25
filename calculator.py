@@ -1,4 +1,4 @@
-from unit_converter import get_number
+from utils import get_number
 
 def calculator():
     print("""
@@ -16,14 +16,7 @@ def calculator():
     if option.upper() == "X":
         return
     elif option in ("1", "2", "3", "4"):
-        while True:
-            try: 
-                x = get_number("Enter the first number: ")
-                y = get_number("Enter the second number: ")
-                break
-            except ValueError:
-                print("Kindly enter a number")
-                
+                       
         if option == "1":
             x = get_number("Enter the first number: ")
             y = get_number("Enter the second number: ")
@@ -38,19 +31,15 @@ def calculator():
             print(multiplication(x,y))
         elif option == "4":
             x = get_number("Enter the first number: ")
-            y = get_number("Enter the second number: ")
-            while True:
+            while True:             
                 try: 
-                    y = float(input("Enter the second number: "))
+                    y = get_number("Enter the second number: ")
                     result = division(x,y)
                     print(result)
                     break
                 except ZeroDivisionError:
                     print("Invalid Division Operation \n The second number cannot be zero")
-                except ValueError:
-                    print("Kindly enter a number")
-
-        
+                      
     else:
         print("You have entered an invalid option") 
 

@@ -1,3 +1,5 @@
+from utils import get_number
+
 def celsius_to_fahrenheit(cel):
     return (cel * 1.8) + 32
 
@@ -9,16 +11,6 @@ def kilometers_to_miles(km):
 
 def miles_to_kilometres(miles):
     return miles * 1.60934
-
-def get_number(prompt):
-    
-    while True: 
-        try:
-            number = float(input(prompt))
-            break
-        except ValueError:
-            print("Enter a valid number")
-    return number       
 
 def unit_converter():
     print("""
